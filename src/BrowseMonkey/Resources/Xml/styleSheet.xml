@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Style can be set on two types of classes - Controls and IStyleable implementors. -->
+<styles>
+	<!-- contains style information for all classes in application-->
+	<global>
+		<!-- use the "Control" area to set behaviour for all classes which inherit from System.Windows.Form.Control  -->
+		<Control>
+			<class type="vcFramework.Windows.Forms.ListViewSP">
+				<property name="Font">
+					<fontFamily>Edwardian Script ITC</fontFamily>
+					<fontSize>12</fontSize>
+					<fontStyle>Regular</fontStyle>
+				</property>
+				<property name="BackColor" type="string">Desktop</property>
+				<property name="ForeColor" type="string">Black</property>
+			</class>
+		</Control>
+		<!-- use the "IStyleable" area to set behaviour for all classes which emplement the IStyleable interface-->
+		<IStyleable>
+			<!-- the entire "class" node is meant to be passed into an object that implements the IStyleable interface -->
+			<class type="vcFramework.Windows.Forms.GroupBoxXP">
+				<property name="GradientFillAngle">90</property>
+				<property name="GradientColorFirst" type="rgb">
+					<r>182</r>
+					<g>198</g>
+					<b>172</b>
+				</property>
+				<property name="GradientColorSecond" type="rgb">
+					<r>182</r>
+					<g>198</g>
+					<b>172</b>
+				</property>
+				<property name="BorderColor" type="string">Black</property>
+				<property name="BorderWidth">1</property>
+				<property name="HeaderFont">
+					<fontFamily>Edwardian Script ITC</fontFamily>
+					<fontSize>12</fontSize>
+					<fontStyle>Regular</fontStyle>
+				</property>
+			</class>
+		</IStyleable>
+	</global>
+	<!-- contains style for IStyleable implementors, which ALSO have a styleClass associated with them -->
+	<styleClasses>
+	</styleClasses>
+	<!-- contains an exclusion mask which prevents global settings from being applied to specific classes-->
+	<exclusive>
+	</exclusive>
+	<!-- contains information for specific class instances-->
+	<specific>
+	</specific>
+</styles>

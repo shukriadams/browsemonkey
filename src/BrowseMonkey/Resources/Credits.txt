@@ -1,0 +1,8 @@
+BrowseMonkey was written by Shukri Adams.
+
+Major yahoos go out to :
+* Icsharpcode for the SharpZip library, used to compressed files created in this application (http://www.icsharpcode.net).
+* Phil Wright for his Magic Library, used for the docking behaviour (http://www.dotnetmagic.com - Open Source version available at http://sourceforge.net/projects/dotnetmagic/).
+* The Nullsoft Scriptable Install System (http://sourceforge.net/projects/nsis/) - used to make the installer.
+
+This application owes much to examples, tutorials and solutions posted online in various places, too numerous to all get a mention. I would like to single out www.codeproject.com and www.c-sharpcorner.com though.

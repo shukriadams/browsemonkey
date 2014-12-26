@@ -1,0 +1,26 @@
+0.5.0
+- Changed format of BrowseMonkey data files. Files created in 0.3.0 and 0.2.0 can be conveniently updated.
+- Removed the "Library" entirely. BrowseMonkey no longer keeps direct links to files it creates.
+- Switched form docking controls from MagicLibrary to Weifen Luo's DockManager.
+- Greatly speeded up memory management of volumes, as well as loading of listviews
+- Countless UI tweaks everywhere
+
+0.3.0
+- Optimized data displaying in listviews somewhat. (.Net listviews are still notoriously slow).
+- Added proper click-and-open of Volume files from Windows if the file type is registered in Windows (not yet included).
+- Changed the way the volume library is used - you no longer have to add a volume to the library when opening the volume.
+- Improved the search system so there are more possibilities for selecting which volumes to search in.
+- Numerous small changes and improvements.
+
+0.2.0
+- Totally new volume file format. Previous format longer supported (sorry!). New format is a single file instead of previous index + data file. Also added vastly streamlined file accessing.
+- Can now double click on any Windows-registered BrowseMonkey file to launch BrowseMonkey and auto open that file.
+- Can now drag any valid BrowseMonkey file onto BrowseMonkey to open said file.  
+- Totally reworked the "Explorer". It now holds file links, and acts as a file library. You can use the library to keep track of your files. Searching is also easier when done one items in the library. Files can be dragged onto the library to add them, any file opened by BrowseMonkey can be automatically added to the library, and files can be dragged around in the library to organise them.
+- Moved search features to seperate "Search" form - they had previously been on the "Explorer" form.
+- Fixed error where volume type was not saved on volume creation.
+- Fixed error where copying console contents to memory failed.
+- Fixed text dump not saving contents bug.  
+- Fixed bug where closing a volume did not always free up memory used by that volume.
+- Fixed several minor bugs and glitches.
+- Tweaked the layout on just about everything.

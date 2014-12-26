@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aboutContents>
+<about>
+
+BrowseMonkey is a simple utility for storing file structure data in Xml format. The data can be browsed without requiring direct access to the source material it was created from.
+
+BrowseMonkey is released under the GPL, and is written entirely in C#.
+
+For the latest version and source code, visit http://sourceforge.net/projects/browsemonkey .
+
+If you're interested in what exactly Open Source is, http://www.opensource.org is recommended.
+
+For a full copy of the GPL and other documentation, please check /docs under your program installation folder.
+
+</about>
+<credits>
+BrowseMonkey was written by Shukri Adams.
+
+Major yahoos go out to :
+* Icsharpcode for the SharpZip library, used to compressed files created in this application (http://www.icsharpcode.net).
+* Phil Wright for his Magic Library, used for the docking behaviour (http://www.dotnetmagic.com - Open Source version available at http://sourceforge.net/projects/dotnetmagic/).
+* The Nullsoft Scriptable Install System (http://sourceforge.net/projects/nsis/) - used to make the installer.
+
+This application owes much to examples, tutorials and solutions posted online in various places, too numerous to all get a mention. I would like to single out www.codeproject.com and www.c-sharpcorner.com though.
+
+</credits>
+<changeLog>
+______________________________________
+0.3.0
+- Optimized data displaying in   listviews somewhat. (.Net listviews   are still notoriously slow).
+- Added proper click-and-open of 
+  Volume files from Windows if the 
+  file type is registered in Windows
+  (not yet included).
+- Changed the way the volume library 
+  is used - you no longer have to add 
+  a volume to the library when opening 
+  the volume.
+- Improved the search system so there 
+  are more possibilities for selecting 
+  which volumes to search in.
+- Numerous small changes and 
+  improvements.
+
+0.2.0
+Many changes :
+- Totally new volume file format. 
+  Previous format longer supported 
+  (sorry!). New format is a single 
+  file instead of previous index + 
+  data file. Also added vastly 
+  streamlined file accessing.
+- Can now double click on any 
+  Windows-registered BrowseMonkey file
+  to launch BrowseMonkey and auto open
+  that file.
+- Can now drag any valid BrowseMonkey
+  file onto BrowseMonkey to open said
+  file.  
+- Totally reworked the "Explorer". It
+  now holds file links, and acts as
+  a file library. You can use the 
+  library to keep track of your 
+  files. Searching is also easier when
+  done one items in the library. Files
+  can be dragged onto the library to 
+  add them, any file opened by 
+  BrowseMonkey can be automatically 
+  added to the library, and files
+  can be dragged around in the 
+  library to organise them.
+- Moved search features to seperate
+  "Search" form - they had previously
+  been on the "Explorer" form.
+- Fixed error where volume type was 
+  not saved on volume creation.
+- Fixed error where copying console
+  contents to memory failed.
+- Fixed text dump not saving contents
+  bug.  
+- Fixed bug where closing a volume
+  did not always free up memory used
+  by that volume.
+- Fixed several minor bugs and 
+  glitches.
+- Tweaked the layout on just about
+  everything.
+Removed lots of stuff :
+- Can no longer produce uncompressed
+  BrowseMonkey files.
+- BrowseMonkey file extensions no
+  longer required.
+
+______________________________________
+</changeLog>
+</aboutContents>

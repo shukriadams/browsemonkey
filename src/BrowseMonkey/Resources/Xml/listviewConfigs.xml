@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listviews>
+	<!-- used on explorer form -->
+	<!--listview name="volumesExplorer">
+		<column internalName="volumeIcon" width="20"/>
+		<column internalName="volumeAlias" width="70" widthBehaviour="Autofit">Volume Name</column>
+		<column internalName="volumeType" width="70">Type</column>
+		<column internalName="volumeDate" width="40">Date Created</column>
+		<column internalName="volumeFileName" width="0" contentType="Hidden">volumeFileName</column>
+	</listview-->
+	<!-- all files listview in volume browser -->
+	<!--listview name="volumeBrowser_Files">
+		<column internalName="name" width="145" widthBehaviour="Autofit">Name</column>
+		<column internalName="itemPath" width="143" widthBehaviour="Autofit">Path</column>
+		<column internalName="dateCreated" width="98">Date Created</column>
+		<column internalName="dateModified" width="98">Date Modified</column>
+		<column internalName="size" width="60" hAlign="Right">Size</column>
+		<column internalName="extension" width="58">Extension</column>
+	</listview-->
+	<listview name="volumeBrowser_Files">
+		<column internalName="name" width="145" widthBehaviour="Autofit">Name</column>
+		<column internalName="dateCreated" width="98">Date Created</column>
+		<column internalName="dateModified" width="98">Date Modified</column>
+		<column internalName="size" width="60" hAlign="Right">Size</column>
+		<column internalName="path" width="98">Path</column>
+	</listview>
+	<listview name="searchResults">
+		<column internalName="searchArgument" width="0" contentType="Hidden">Search Argument</column>
+		<column internalName="foundInString" width="100" widthBehaviour="Autofit">Matching Text</column>
+		<column internalName="foundInVolume" width="100">VolumePath</column>
+		<column internalName="fileStructurePath" width="0" contentType="Hidden">Path</column>
+		<column internalName="foundInType" width="50">Type</column>
+		<column internalName="score" width="50">Score</column>
+	</listview>
+</listviews>

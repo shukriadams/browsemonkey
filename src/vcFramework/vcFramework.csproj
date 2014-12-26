@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E5715BF-8A72-402A-90D5-B9E543F48CE2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>vcFramework</RootNamespace>
+    <AssemblyName>vcFramework</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arrays\ArrayLib.cs" />
+    <Compile Include="Arrays\ByteArrayLib.cs" />
+    <Compile Include="Arrays\Enums.cs" />
+    <Compile Include="Arrays\StringArrayLib.cs" />
+    <Compile Include="Assemblies\AssemblyAccessor.cs" />
+    <Compile Include="Assemblies\AssemblyLib.cs" />
+    <Compile Include="Collections\Enums.cs" />
+    <Compile Include="Collections\FSLinksCollection.cs" />
+    <Compile Include="DataItems\ByteSizeItem.cs" />
+    <Compile Include="DataItems\StringItem.cs" />
+    <Compile Include="Delegates\DelegateLib.cs" />
+    <Compile Include="Delegates\Delegates.cs" />
+    <Compile Include="Diagnostics\ProcessLib.cs" />
+    <Compile Include="Drawing\DrawingLib.cs" />
+    <Compile Include="ErrorHandlers\ByteSizeException.cs" />
+    <Compile Include="ErrorHandlers\LogFileException.cs" />
+    <Compile Include="Interop\StringMessageEventArgs.cs" />
+    <Compile Include="Interop\StringMessenger.cs" />
+    <Compile Include="IO\FileSystemLib.cs" />
+    <Compile Include="IO\Logger.cs" />
+    <Compile Include="IO\MappingException.cs" />
+    <Compile Include="IO\RandomFSItemPicker.cs" />
+    <Compile Include="IO\Streams\StreamsLib.cs" />
+    <Compile Include="IO\Streams\StreamSplitter.cs" />
+    <Compile Include="IProgress.cs" />
+    <Compile Include="IStateManageable.cs" />
+    <Compile Include="Maths\AggregationLib.cs" />
+    <Compile Include="Parsers\ParserLib.cs" />
+    <Compile Include="Parsers\StringFormatLib.cs" />
+    <Compile Include="Parsers\StringTypeTestLib.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomItems\RandomLib.cs" />
+    <Compile Include="Serialization\SerializeLib.cs" />
+    <Compile Include="Text\StringSortLib.cs" />
+    <Compile Include="Text\TextConvertLib.cs" />
+    <Compile Include="Threads\ThreadCollection.cs" />
+    <Compile Include="Time\DateTimeLib.cs" />
+    <Compile Include="Time\Enums.cs" />
+    <Compile Include="UserControls\MessageConsole.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\ColumnHeaderSP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\ColumnStringSorter.cs" />
+    <Compile Include="Windows\Forms\ComboBoxDataItem.cs" />
+    <Compile Include="Windows\Forms\DisplayValueItem.cs" />
+    <Compile Include="Windows\Forms\FormLib.cs" />
+    <Compile Include="Windows\Forms\ListBoxLib.cs" />
+    <Compile Include="Windows\Forms\ListViewItemSP.cs" />
+    <Compile Include="Windows\Forms\ListViewSP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\PanelGallery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\PanelGalleryCollection.cs" />
+    <Compile Include="Windows\Forms\PanelGalleryItemAddedEventArgs.cs" />
+    <Compile Include="Windows\Forms\ProgressBarHelper.cs" />
+    <Compile Include="Windows\Forms\PromptLib.cs" />
+    <Compile Include="Windows\Forms\SignOfLife.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\TimedProgressBarAdvancer.cs" />
+    <Compile Include="Windows\Forms\TreeViewNodeExpander.cs" />
+    <Compile Include="Xml\StateHolder.cs" />
+    <Compile Include="Xml\XmlLib.cs" />
+    <Compile Include="Xml\XmlSearch.cs" />
+    <Compile Include="Xml\XmlSearchResult.cs" />
+    <Compile Include="Xml\XmlValidator.cs" />
+    <Compile Include="Xml\XmlValidatorLib.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UserControls\MessageConsole.resx">
+      <DependentUpon>MessageConsole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\ColumnHeaderSP.resx">
+      <DependentUpon>ColumnHeaderSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\ListViewSP.resx">
+      <DependentUpon>ListViewSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\PanelGallery.resx">
+      <DependentUpon>PanelGallery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\SignOfLife.resx">
+      <DependentUpon>SignOfLife.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CommonResources\Icons\OPENFOLD.ICO" />
+    <EmbeddedResource Include="UserControls\close.png" />
+    <EmbeddedResource Include="UserControls\editcopy.png" />
+    <EmbeddedResource Include="UserControls\filesave.png" />
+    <EmbeddedResource Include="UserControls\filesaveas.png" />
+    <EmbeddedResource Include="UserControls\info.png" />
+    <EmbeddedResource Include="UserControls\trash.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

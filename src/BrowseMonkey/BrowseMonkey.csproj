@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5CE87D60-8C9C-45E6-A4D2-32E296740649}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Resources\Images\appIcon.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>BrowseMonkey</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BrowseMonkey</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>BrowseMonkey\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vcFramework\vcFramework.csproj">
+      <Project>{6e5715bf-8a72-402a-90d5-b9e543f48ce2}</Project>
+      <Name>vcFramework</Name>
+    </ProjectReference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\BrowseMonkeyData\BrowseMonkeyData.csproj">
+      <Name>BrowseMonkeyData</Name>
+      <Project>{C761B1C4-DBD8-4899-BD57-9B82CFBD77A4}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\FSXmlWinUI\FSXmlWinUI.csproj">
+      <Name>FSXmlWinUI</Name>
+      <Project>{435136FA-A760-4577-B899-AA24356913C0}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\FSXml\FSXml.csproj">
+      <Name>FSXml</Name>
+      <Project>{5764A6CF-0DB6-4D9B-B876-A37BA16663B4}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\packages\DockPanelSuite.2.9.0.0\lib\net40\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Compile Include="ApplicationConsole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Constants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileListExportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FormFinderLib.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IDirty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ISpawned.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchArguments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextExportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VolumeBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VolumeConvertDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VolumeCreateDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VolumePathSelectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VolumeProperties.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="ApplicationConsole.resx">
+      <DependentUpon>ApplicationConsole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportViewer.resx">
+      <DependentUpon>ExportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileListExportDialog.resx">
+      <DependentUpon>FileListExportDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\About.txt" />
+    <EmbeddedResource Include="Resources\ChangeLog.txt" />
+    <EmbeddedResource Include="Resources\Credits.txt" />
+    <EmbeddedResource Include="Resources\Images\aboutTop.png" />
+    <EmbeddedResource Include="Resources\Images\appIcon.ico" />
+    <EmbeddedResource Include="Resources\Images\clip.ico" />
+    <EmbeddedResource Include="Resources\Images\close.ico" />
+    <EmbeddedResource Include="Resources\Images\close.png" />
+    <EmbeddedResource Include="Resources\Images\close001_16x16.png" />
+    <EmbeddedResource Include="Resources\Images\columns_001.png" />
+    <EmbeddedResource Include="Resources\Images\copy.png" />
+    <EmbeddedResource Include="Resources\Images\down001_16x16.png" />
+    <EmbeddedResource Include="Resources\Images\LinkLockerIcons\brokenLink.ico" />
+    <EmbeddedResource Include="Resources\Images\LinkLockerIcons\folder_Closed.ico" />
+    <EmbeddedResource Include="Resources\Images\LinkLockerIcons\folder_Open.ico" />
+    <EmbeddedResource Include="Resources\Images\LinkLockerIcons\link.ico" />
+    <EmbeddedResource Include="Resources\Images\minus001_16x16.png" />
+    <EmbeddedResource Include="Resources\Images\root.ICO" />
+    <EmbeddedResource Include="Resources\Images\save.ico" />
+    <EmbeddedResource Include="Resources\Images\save.png" />
+    <EmbeddedResource Include="Resources\Images\splash.png" />
+    <EmbeddedResource Include="Resources\Images\up001_16x16.png" />
+    <EmbeddedResource Include="Resources\Images\volumeIcons\cd.png" />
+    <EmbeddedResource Include="Resources\Images\volumeIcons\cdr.png" />
+    <EmbeddedResource Include="Resources\Images\volumeIcons\cdrw.png" />
+    <EmbeddedResource Include="Resources\Images\volumeIcons\diskette.png" />
+    <EmbeddedResource Include="Resources\Images\volumeIcons\dvd.png" />
+    <EmbeddedResource Include="Resources\Images\volumeIcons\dvdr.png" />
+    <EmbeddedResource Include="Resources\Images\volumeIcons\dvdrw.png" />
+    <EmbeddedResource Include="Resources\Images\volumeIcons\firewiredrive.png" />
+    <EmbeddedResource Include="Resources\Images\volumeIcons\harddisk.png" />
+    <EmbeddedResource Include="Resources\Images\volumeIcons\netdrive.png" />
+    <EmbeddedResource Include="Resources\Images\volumeIcons\tape.png" />
+    <EmbeddedResource Include="Resources\Images\volumeIcons\unknown.png" />
+    <EmbeddedResource Include="Resources\Images\volumeIcons\usbdrive.png" />
+    <EmbeddedResource Include="Resources\Images\volumeIcons\zip.png" />
+    <EmbeddedResource Include="Resources\Xml\aboutContents.xml" />
+    <EmbeddedResource Include="Resources\Xml\listviewConfigs.xml" />
+    <EmbeddedResource Include="Resources\Xml\PromptContents.xml" />
+    <EmbeddedResource Include="Resources\Xml\styleSheet.xml" />
+    <EmbeddedResource Include="Resources\Xml\treeIconLoadList.xml" />
+    <EmbeddedResource Include="Resources\Xml\volumeDataFormat.xsd" />
+    <EmbeddedResource Include="Resources\Xml\volumeIndexFormat.xsd" />
+    <EmbeddedResource Include="Resources\Xml\volumeTypes.xml" />
+    <EmbeddedResource Include="SearchArguments.resx">
+      <DependentUpon>SearchArguments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchDialog.resx">
+      <DependentUpon>SearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchResults.resx">
+      <DependentUpon>SearchResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextExportDialog.resx">
+      <DependentUpon>TextExportDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VolumeBrowser.resx">
+      <DependentUpon>VolumeBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VolumeConvertDialog.resx">
+      <DependentUpon>VolumeConvertDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VolumeCreateDialog.resx">
+      <DependentUpon>VolumeCreateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VolumePathSelectDialog.resx">
+      <DependentUpon>VolumePathSelectDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VolumeProperties.resx">
+      <DependentUpon>VolumeProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\Xml\volumeDataFormat.xsx">
+      <DependentUpon>volumeDataFormat.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Xml\volumeIndexFormat.xsx">
+      <DependentUpon>volumeIndexFormat.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

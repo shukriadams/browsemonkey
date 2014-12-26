@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<listview>
+	<column internalName="itemName" width="120" widthBehaviour="Autofit">Name</column>
+	<column internalName="itemPath" width="0" contentType="Hidden">Path</column>
+	<column internalName="dateCreated" width="98">Date Created</column>
+	<column internalName="dateModified" width="98">Date Modified</column>
+	<column internalName="itemSize" width="60">Size</column>
+	<column internalName="itemExtension" width="60">Type</column>
+</listview>
+

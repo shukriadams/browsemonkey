@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<messages>
+	<message name="RevertingToDefault">
+		<!-- True or False -->
+		<suppress>False</suppress>
+		<title>Note</title>
+		<statement>No volume path is specified - using the default volume path "VolumeData" located in
+		application installation folder. </statement>
+	</message>
+</messages>

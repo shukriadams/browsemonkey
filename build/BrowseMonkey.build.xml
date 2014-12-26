@@ -1,0 +1,20 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <BuildConfig>config to build, pass in as arg</BuildConfig>
+  </PropertyGroup> 
+
+  <Target Name="CleanOld">
+    <ItemGroup>
+      <ObjFiles Include="obj\*.*" />
+      <BinFiles Include="bin\*.*" />
+    </ItemGroup>
+    <Delete Files="@(ObjFiles)" />
+    <Delete Files="@(BinFiles)" />
+  </Target>
+ 
+  <Target Name="Build" DependsOnTargets="CleanOld">
+    <MSBuild Projects="../src/Browsemonkey/Browsemonkey.csproj" Properties="Configuration=$(BuildConfig)"  />
+  </Target>
+
+</Project>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="d" type="directory"/>
+	<xs:complexType name="directory">
+		<xs:sequence>
+			<xs:element name="n" type="xs:string"/>
+			<xs:element name="dc" type="xs:string"/>
+			<xs:element name="dm" type="xs:string"/>
+			<xs:element name="o" type="other" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="fs" type="files"/>
+			<xs:element name="ds" type="directories"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="directories">
+		<xs:sequence>
+			<xs:element name="d" type="directory" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="files">
+		<xs:sequence>
+			<xs:element name="f" type="file" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="file">
+		<xs:sequence>
+			<xs:element name="n" type="xs:string"/>
+			<xs:element name="dc" type="xs:string"/>
+			<xs:element name="dm" type="xs:string"/>
+			<xs:element name="s" type="xs:long" />
+			<xs:element name="o" type="other" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="other">
+		<xs:sequence>
+			<xs:element name="crc" type="xs:string" minOccurs="0"/>
+			<xs:element name="de" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

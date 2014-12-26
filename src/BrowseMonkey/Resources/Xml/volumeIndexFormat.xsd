@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="i" type="root"/>
+	<xs:complexType name="root">
+		<xs:sequence>
+			<xs:element name="n" type="xs:string"/>
+			<xs:element name="de" type="xs:string"/>
+			<xs:element name="dc" type="xs:string"/>
+			<xs:element name="dm" type="xs:string"/>
+			<xs:element name="v" type="xs:string"/>
+			<xs:element name="t" type="xs:string"/>
+			<xs:element name="c" type="xs:string"/>
+			<xs:element name="d" type="xs:int"/>
+			<xs:element name="f" type="xs:int"/>
+			<xs:element name="cs" type="xs:long"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

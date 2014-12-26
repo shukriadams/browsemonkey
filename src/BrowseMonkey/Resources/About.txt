@@ -1,0 +1,13 @@
+BrowseMonkey is a simple utility for storing file structure data in Xml format. 
+The data can be browsed without requiring direct access to the source material it was created from.
+
+Current version : 0.5.0
+Release date : 2005/07/27
+
+BrowseMonkey is released under the GPL, and is written entirely in C#.
+
+For the latest version and source code, visit http://sourceforge.net/projects/browsemonkey .
+
+If you're interested in what exactly Open Source is, http://www.opensource.org is recommended.
+
+For a full copy of the GPL and other documentation, please check /docs under your program installation folder.

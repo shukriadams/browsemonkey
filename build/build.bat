@@ -1,0 +1,1 @@
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe BrowseMonkey.build.xml /t:Build /p:BuildConfig=Release;VisualStudioVersion=12.0;DebugType=full;PreBuildEvent=;PostBuildEvent=;OutputPath=..\..\_build;DeployOnBuild=true;DeployTarget=Package
