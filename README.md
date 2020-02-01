@@ -1,7 +1,7 @@
 Browsemonkey
 ============
 
-Download latest Browsemonkey installer : https://github.com/shukriadams/browsemonkey/releases/download/0.5.1/BrowseMonkey-0.5.1.exe
+Download latest Browsemonkey installer (Windows, requires .Net) : https://github.com/shukriadams/browsemonkey/releases/download/0.5.1/BrowseMonkey-0.5.1.exe
 
 Browsemonkey takes snapshots of file systems for offline browsing. It was primarily intended to catalog offline storage media like CDRs, DVDRs, USB drives etc. Use it to browse and search for files on media that are not physically connected.
 
